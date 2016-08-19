@@ -11,6 +11,7 @@ public class PigDice {
 
     do {
       turnTotal = 0;
+      System.out.println("==========================");
       System.out.println("You have " + ptot + " points.");
 
       do {
@@ -19,6 +20,8 @@ public class PigDice {
 
         if(roll == 1) {
           System.out.println("\tThat ends your turn.");
+          System.out.println("==========================");
+          System.out.println("==========================");
           turnTotal = 0;
         }
         else {
@@ -34,6 +37,9 @@ public class PigDice {
 
       ptot += turnTotal;
       System.out.println("\tYou end the round with " + ptot + " points.");
+      System.out.println("==========================");
+      System.out.println("==========================");
+      System.out.println("==========================");
 
       if (ptot < 100) {
         turnTotal = 0;
@@ -45,6 +51,8 @@ public class PigDice {
 
           if (roll == 1) {
             System.out.println("\tThat ends his turn.");
+            System.out.println("==========================");
+            System.out.println("==========================");
             turnTotal = 0;
           }
           else {
